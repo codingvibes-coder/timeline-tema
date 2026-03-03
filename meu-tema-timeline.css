@@ -1,0 +1,178 @@
+/* ============================================
+   TEMA PERSONALIZADO — Knightlab TimelineJS
+   Estilo: Editorial escuro com acentos âmbar
+   ============================================ */
+
+/* ── FONTES DO GOOGLE ─────────────────────── */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400&display=swap');
+
+/* ════════════════════════════════════════════
+   ÁREA DOS SLIDES
+   ════════════════════════════════════════════ */
+
+/* Fundo geral dos slides */
+.tl-slider-container-mask {
+  background-color: #1a1a2e;
+}
+
+/* Área de texto */
+.tl-text {
+  background-color: transparent;
+  padding: 2em 2.5em;
+}
+
+/* Data acima do título */
+.tl-headline-date {
+  font-family: 'Lato', Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 0.85em;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #f5a623 !important;
+}
+
+/* Título do slide */
+h2.tl-headline {
+  font-family: 'Playfair Display', Georgia, serif !important;
+  font-size: 2.2em !important;
+  font-weight: 700;
+  color: #e8e0d0 !important;
+  line-height: 1.2;
+  border-left: 4px solid #f5a623;
+  padding-left: 0.6em;
+  margin-bottom: 0.5em;
+}
+
+/* Título do slide de capa */
+h2.tl-headline.tl-headline-title {
+  font-size: 3em !important;
+  border-left: none;
+  padding-left: 0;
+  text-align: center;
+}
+
+/* Corpo do texto */
+.tl-text-content p {
+  font-family: 'Lato', Helvetica, sans-serif;
+  font-size: 1em;
+  line-height: 1.8;
+  color: #9a9080 !important;
+  font-weight: 300;
+}
+
+/* Legenda da mídia */
+.tl-caption {
+  font-family: 'Lato', Helvetica, sans-serif;
+  font-size: 0.8em;
+  color: #9a9080 !important;
+  font-style: italic;
+}
+
+/* Crédito da mídia */
+.tl-credit {
+  font-family: 'Lato', Helvetica, sans-serif;
+  font-size: 0.75em;
+  color: #f5a623 !important;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+/* Borda ao redor da mídia */
+.tl-media-content {
+  border: 1px solid rgba(245, 166, 35, 0.25);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+/* ════════════════════════════════════════════
+   NAVEGAÇÃO (setas próximo / anterior)
+   ════════════════════════════════════════════ */
+
+.tl-slidenav-next,
+.tl-slidenav-previous {
+  color: #9a9080 !important;
+  transition: color 0.2s ease;
+}
+
+.tl-slidenav-next:hover,
+.tl-slidenav-previous:hover {
+  color: #f5a623 !important;
+}
+
+/* ════════════════════════════════════════════
+   BARRA DE TEMPO (timenav)
+   ════════════════════════════════════════════ */
+
+/* Fundo da barra */
+.tl-timenav {
+  background-color: #0f0f1a !important;
+  border-top: 2px solid #f5a623;
+}
+
+/* Fundo dos ticks */
+.tl-timeaxis-background {
+  background-color: #0f0f1a !important;
+}
+
+/* Ticks menores */
+.tl-timeaxis-tick:before {
+  background-color: rgba(245, 166, 35, 0.3) !important;
+}
+
+/* Ticks maiores */
+.tl-timeaxis-major .tl-timeaxis-tick:before {
+  background-color: #f5a623 !important;
+}
+
+/* ── Marcadores (bandeirinhas) ───────────────── */
+
+/* Marcador padrão */
+.tl-timemarker .tl-timemarker-content-container {
+  background-color: #2e2e4a !important;
+  border: 1px solid rgba(245, 166, 35, 0.2);
+  border-radius: 3px;
+}
+
+/* Marcador ativo (slide atual) */
+.tl-timemarker.tl-timemarker-active .tl-timemarker-content-container {
+  background-color: #f5a623 !important;
+}
+
+/* Linha do marcador */
+.tl-timemarker-line-left,
+.tl-timemarker-line-right {
+  background-color: rgba(245, 166, 35, 0.4) !important;
+}
+
+.tl-timemarker.tl-timemarker-active .tl-timemarker-line-left,
+.tl-timemarker.tl-timemarker-active .tl-timemarker-line-right {
+  background-color: #f5a623 !important;
+}
+
+/* Texto dentro das bandeirinhas */
+.tl-timemarker .tl-timemarker-content-container .tl-timemarker-content .tl-timemarker-text h2.tl-headline {
+  font-family: 'Lato', Helvetica, sans-serif !important;
+  font-size: 0.75em !important;
+  font-weight: 400;
+  color: #9a9080 !important;
+  border-left: none !important;
+  padding-left: 0 !important;
+}
+
+.tl-timemarker.tl-timemarker-active .tl-timemarker-content-container .tl-timemarker-content .tl-timemarker-text h2.tl-headline {
+  color: #1a1a2e !important;
+  font-weight: 700;
+}
+
+/* ── Botões de zoom ──────────────────────────── */
+.tl-menubar-button {
+  color: #9a9080 !important;
+  border-color: #2e2e4a !important;
+  background-color: #0f0f1a !important;
+  transition: all 0.2s ease;
+}
+
+.tl-menubar-button:hover {
+  color: #f5a623 !important;
+  border-color: #f5a623 !important;
+}
